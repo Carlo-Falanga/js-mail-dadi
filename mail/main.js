@@ -31,6 +31,13 @@ for (let i = 0; i < array.length; i++) {
     message = true;
   }
 }
-
+// - SE la mail e' presente invio alert di conferma
+if (message === true){
+    alert('Correct email')
+}
+// - ALTRIMENTI invio alert di errore
+else{
+    alert('Incorrect email')
+}
 
 console.log(message);
