@@ -1,4 +1,4 @@
-console.log('It works');
+console.log("It works");
 
 /*
 Mail
@@ -13,12 +13,24 @@ Non è necessario provvedere alla validazione delle email
 */
 
 // - creo una lista di con un array
-const array = ['esempio1@gmail.com', 'esempio2@alice.it', 'esempio3@libero.it']
+const array = ["esempio1@gmail.com", "esempio2@alice.it", "esempio3@libero.it"];
 console.log(array);
 
 // - chiedo all'utente di inserire la mail
-const mail = prompt('Type your email')
-console.log(mail);
+const typeMail = prompt("Type your email");
+console.log(typeMail);
 
-// - controllo SE la mail inserita e' presente nell'array con un ciclo FOR
-// - stampo messaggio appropriato
+// - creo variabile globale per stampare se la mail e' presente o meno
+let message = false;
+
+// - ciclo For
+for (let i = 0; i < array.length; i++) {
+  const mail = array[i];
+  // - controllo SE la mail inserita e' presente nell'array con un ciclo FOR
+  if (mail === typeMail) {
+    message = true;
+  }
+}
+
+
+console.log(message);
