@@ -25,7 +25,15 @@ alert(`Player gets the number ${playerNumber}`)
 const pcNumber = (Math.floor(Math.random() * 6) + 1);
 alert(`Pc gets the number ${pcNumber}`)
 
-
+// - stabilire quando il numero piu alto vince
+if (playerNumber > pcNumber){
+    alert('Player wins')
+}
+else if (playerNumber < pcNumber){
+    alert('Computer wins')
+}else {
+    alert('Tie')
+}
 
 
 
