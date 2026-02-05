@@ -17,5 +17,8 @@ const array = ['esempio1@gmail.com', 'esempio2@alice.it', 'esempio3@libero.it']
 console.log(array);
 
 // - chiedo all'utente di inserire la mail
+const mail = prompt('Type your email')
+console.log(mail);
+
 // - controllo SE la mail inserita e' presente nell'array con un ciclo FOR
 // - stampo messaggio appropriato
